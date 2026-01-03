@@ -4,6 +4,7 @@
 \usepackage{fontawesome5}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\CPP}{C\nolinebreak[4]\hspace{-.05em}\raisebox{.25ex}{\footnotesize\bf ++}}
 
 % Contact Info
 \name{Sanchit Dass}
@@ -15,56 +16,62 @@
 \begin{document}
 
     % 1. Professional Summary
-    \begin{rSection}{Professional Summary}
-        Full Stack Software Engineer with experience building LLM-driven platforms, AI tooling, and scalable web
-        applications across startups and enterprise environments. Strong background in Python, JavaScript
-        and React with proven delivery of production AI pipelines, data extraction platforms, and cross-platform
-        applications.
-    \end{rSection}
+    % \begin{rSection}{Professional Summary}
+    %     Full Stack Software Engineer with experience building LLM-driven platforms, AI tooling, and scalable web
+    %     applications across startups and enterprise environments. Strong background in Python, JavaScript
+    %     and React with proven delivery of production AI pipelines, data extraction platforms, and cross-platform
+    %     applications.
+    % \end{rSection}
 
     % 2. Work Experience
     \begin{rSection}{Work Experience}
         \textbf{Software Engineer Specialist} \hfill Jul 2025 --- Nov 2025 \\
         xAI \hfill \textit{Remote, India}
         \begin{itemize}
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
+            \item Curated high-quality open-source datasets across JavaScript, Python, and C++ for training Grok coding models, improving model coverage and realism.
+            \item Resolved 10+ critical model issues by analyzing failures, refining system prompts, and validating fixes across reasoning and non-reasoning model variants.
+            \item Reviewed and debugged AI generated code for real user projects (open source libraries, small apps, 2D games), ensuring outputs met functional requirements and performance expectations.
         \end{itemize}
         
         \textbf{Founding Engineer} \hfill Jan 2025 --- Apr 2025 \\
         FetchFox \hfill \textit{Mountain View, USA}
         \begin{itemize}
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
+            \item Developed and maintained the FetchFox web application using Next.js, delivering end-user features and improving overall product reliability.
+            \item Built one-click integrations for Snowflake and Google Sheets, leveraging official APIs and OAuth flows to streamline data export for users.
+            \item Implemented a Python based MCP server to support FetchFox’s backend workflows and automation use cases.
+            \item Created a benchmarking dashboard using Python and Streamlit for custom web scraping tasks, comparing model performance across standardized challenges to surface strengths and failure modes.
         \end{itemize}
 
         \textbf{Full Stack Intern} \hfill Apr 2024 --- Dec 2024 \\
         ICPC Foundation \hfill \textit{Boston, USA}
         \begin{itemize}
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
+            \item Led development of a social media platform for competitive programmers using Flutter, owning architecture and delivery across authentication, feeds, messaging, and notifications.
+            \item Designed and implemented a role based real time notification system, enabling ICPC competition admins to broadcast live announcements during the ICPC 2024 World Finals.
         \end{itemize}
 
         \textbf{Software Engineer} \hfill Jul 2020 --- Jun 2022 \\
         National Instruments \hfill \textit{Bengaluru, India}
         \begin{itemize}
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
+            \item Led architectural changes enabling side by side RFmx installations, ensuring backward compatibility across releases by redesigning installation and versioning workflows.
+            \item Reduced CI build time by ~27\% by optimizing Jenkins pipelines, directly improving developer iteration speed.
+            \item Developed and maintained production-grade C++ APIs for RFmx signal analysis software, contributing to 4 major product releases.
+            \item Built an automated Python-based testing framework integrated into nightly builds, significantly improving bug detection, triage speed, and release confidence.
+            \item Drove migration from legacy Perforce to Git (Azure DevOps), modernizing source control and build pipelines while minimizing disruption to active development.
         \end{itemize}
 
         \textbf{Software Engineer Intern} \hfill Jan 2020 --- Jun 2020 \\
         National Instruments \hfill \textit{Bengaluru, India}
         \begin{itemize}
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
-            \item \href{https://www.faangtechleads.com/resume/general-guidelines}{Action verb} + what you did + reason, outcome or quantified results. Talk about technologies used.
+            \item Delivered an end-to-end inventory management system that replaced manual bookkeeping and eliminated frequent scheduling conflicts, by designing a React + Django platform used by RF developers across the lab.
+            \item Integrated 500+ RF lab instruments with a centralized backend, enabling live status and availability tracking by consuming REST APIs exposed by each device and persisting telemetry in MySQL.
         \end{itemize}
     \end{rSection} 
 
     % 3. Skills
     \begin{rSection}{Skills}
         \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-            Programming Languages & Python, JavaScript, C++ \\
-            Technologies & React, Node.js, Django, Large Language Models, Amazon Web Services, Docker \\
+            Programming Languages & Python, JavaScript, \CPP \\
+            Technologies & React, Node.js, Django, Large Language Models, Amazon Web Services, Docker, Flutter \\
         \end{tabular}\\
     \end{rSection}
 
@@ -97,9 +104,9 @@
     % \end{rSection}
 
     % 6. Awards
-    \begin{rSection}{Awards}
-        \begin{itemize}
-            \item \textbf{MIT Women's Health AI Hackathon} --- Winners of Most Innovative Idea \hfill {May 2025}
-        \end{itemize}
-    \end{rSection}
+    % \begin{rSection}{Awards}
+    %     \begin{itemize}
+    %         \item \textbf{MIT Women's Health AI Hackathon} --- Winners of Most Innovative Idea \hfill {May 2025}
+    %     \end{itemize}
+    % \end{rSection}
 \end{document}
