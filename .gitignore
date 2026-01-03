@@ -13,3 +13,6 @@
 .*.lb
 *.gz
 *_latexmk
+
+# Generated PDF
+resume.pdf
