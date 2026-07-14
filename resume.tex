@@ -2,9 +2,13 @@
 
 \usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry}
 \usepackage{fontawesome5}
+\usepackage{enumitem}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \newcommand{\CPP}{C\nolinebreak[4]\hspace{-.05em}\raisebox{.25ex}{\footnotesize\bf ++}}
+
+\renewcommand{\sectionskip}{\smallskip}
+\setlist[itemize]{itemsep=2.5pt, parsep=0pt, topsep=1.5pt, partopsep=0pt}
 
 % Contact Info
 \name{Sanchit Dass}
@@ -25,53 +29,61 @@
 
     % 2. Work Experience
     \begin{rSection}{Work Experience}
+        \textbf{Applied AI Engineer} \hfill Feb 2025 --- Present \\
+        Tario AI \hfill \textit{Bengaluru, India}
+        \begin{itemize}
+            \item Building an agentic SDR system to automate lead research, enrichment, and outreach using LangChain and LangGraph.
+            \item Designed FastAPI-based microservices including an SDR copilot chatbot and a batched email generation system using message queues.
+            \item Built pipelines combining LinkedIn + web data with LLM agents to generate context aware personalized emails at scale.
+            \item Improved cost and latency of LLM workflows through prompt optimization, batching, and system-level changes.
+            \item Contributed across backend and frontend to ship production features end-to-end.
+            \item Maintaining a production CRM backend built entirely in Spring Boot, supporting core sales workflows across 3+ internal teams.
+        \end{itemize}
+
         \textbf{Software Engineer Specialist} \hfill Jul 2025 --- Nov 2025 \\
         xAI \hfill \textit{Remote, India}
         \begin{itemize}
-            \item Curated high-quality open-source datasets across JavaScript, Python, and C++ for training Grok coding models, improving model coverage and realism.
-            \item Resolved 10+ critical model issues by analyzing failures, refining system prompts, and validating fixes across reasoning and non-reasoning model variants.
-            \item Reviewed and debugged AI generated code for real user projects (open source libraries, small apps, 2D games), ensuring outputs met functional requirements and performance expectations.
-        \end{itemize}
-        
-        \textbf{Founding Engineer} \hfill Jan 2025 --- Apr 2025 \\
-        FetchFox \hfill \textit{Mountain View, USA}
-        \begin{itemize}
-            \item Developed and maintained the FetchFox web application using Next.js, delivering end-user features and improving overall product reliability.
-            \item Built one-click integrations for Snowflake and Google Sheets, leveraging official APIs and OAuth flows to streamline data export for users.
-            \item Implemented a Python based MCP server to support FetchFox’s backend workflows and automation use cases.
-            % \item Created a benchmarking dashboard using Python and Streamlit for custom web scraping tasks, comparing model performance across standardized challenges to surface strengths and failure modes.
+            \item Built dataset curation and validation tooling across Python, JS, and \CPP\ to improve coding model performance.
+            \item Investigated model failures using execution traces and prompt analysis, identifying root causes for fixes.
+            \item Reduced evaluation runtime by 50\% via parallelized execution pipelines.
+            \item Validated AI-generated code across real-world projects to ensure correctness and performance.
         \end{itemize}
 
-        \textbf{Full Stack Intern} \hfill Apr 2024 --- Dec 2024 \\
-        ICPC Foundation \hfill \textit{Boston, USA}
+        \textbf{Founding Engineer} \hfill Jan 2025 --- Apr 2025 \\
+        FetchFox \hfill \textit{Remote, USA}
         \begin{itemize}
-            \item Led development of a social media platform for competitive programmers using Flutter, owning architecture and delivery across authentication, feeds, messaging, and notifications.
-            \item Designed and implemented a role based real time notification system, enabling ICPC competition admins to broadcast live announcements during the ICPC 2024 World Finals.
+            \item Built and scaled a data extraction platform (Next.js + Python) used by 1,000+ users.
+            \item Implemented integrations with Snowflake and Google Sheets using APIs and OAuth.
+            \item Reduced LLM costs by 25\% through preprocessing and input optimization.
+            \item Built internal benchmarking tools to evaluate scraping quality across models.
+        \end{itemize}
+
+        \textbf{Intern} \hfill Apr 2024 --- Oct 2024 \\
+        ICPC Foundation \hfill \textit{Remote, USA}
+        \begin{itemize}
+            \item Built a Flutter-based social platform (auth, feeds, messaging) for competitive programmers.
+            \item Designed real-time notification systems used during ICPC World Finals.
         \end{itemize}
 
         \textbf{Software Engineer} \hfill Jul 2020 --- Jun 2022 \\
         National Instruments \hfill \textit{Bengaluru, India}
         \begin{itemize}
+            \item Developed and maintained production-grade \CPP\ APIs for RFmx signal analysis software, contributing to 4 major product releases.
             \item Led architectural changes enabling side by side RFmx installations, ensuring backward compatibility across releases by redesigning installation and versioning workflows.
-            \item Reduced CI build time by ~27\% by optimizing Jenkins pipelines, directly improving developer iteration speed.
-            % \item Developed and maintained production-grade C++ APIs for RFmx signal analysis software, contributing to 4 major product releases.
+            \item Reduced CI build time by 27\% by optimizing Jenkins pipelines, directly improving developer iteration speed.
             \item Built an automated Python-based testing framework integrated into nightly builds, significantly improving bug detection, triage speed, and release confidence.
-            \item Drove migration from legacy Perforce to Git (Azure DevOps), modernizing source control and build pipelines while minimizing disruption to active development.
         \end{itemize}
-
-        \textbf{Software Engineer Intern} \hfill Jan 2020 --- Jun 2020 \\
-        National Instruments \hfill \textit{Bengaluru, India}
-        \begin{itemize}
-            \item Delivered an end-to-end inventory management system that replaced manual bookkeeping and eliminated frequent scheduling conflicts, by designing a React + Django platform used by RF developers across the lab.
-            \item Integrated 500+ RF lab instruments with a centralized backend, enabling live status and availability tracking by consuming REST APIs exposed by each device and persisting telemetry in MySQL.
-        \end{itemize}
-    \end{rSection} 
+    \end{rSection}
 
     % 3. Skills
     \begin{rSection}{Skills}
         \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-            Programming Languages & Python, JavaScript, \CPP \\
-            Technologies & React, Node.js, Django, Large Language Models, Amazon Web Services, Docker, Flutter \\
+            Programming & Python, JavaScript, Java \\
+            AI / LLM & LangChain, LangGraph, RAG, Prompt Engineering \\
+            Backend & FastAPI, Spring Boot, Node.js, Django \\
+            Frontend & React, Next.js \\
+            Systems & Docker, Message Queues \\
+            Cloud & Amazon Web Services \\
         \end{tabular}\\
     \end{rSection}
 
