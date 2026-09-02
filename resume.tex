@@ -32,12 +32,11 @@
         \textbf{Applied AI Engineer} \hfill Feb 2025 --- Present \\
         Tario AI \hfill \textit{Bengaluru, India}
         \begin{itemize}
-            \item Building an agentic SDR system to automate lead research, enrichment, and outreach using LangChain and LangGraph.
-            \item Designed FastAPI-based microservices including an SDR copilot chatbot and a batched email generation system using message queues.
-            \item Built pipelines combining LinkedIn + web data with LLM agents to generate context aware personalized emails at scale.
-            \item Improved cost and latency of LLM workflows through prompt optimization, batching, and system-level changes.
-            \item Contributed across backend and frontend to ship production features end-to-end.
-            \item Maintaining a production CRM backend built entirely in Spring Boot, supporting core sales workflows across 3+ internal teams.
+            \item Building an agentic SDR system with LangChain to automate lead research, enrichment, and outreach, cutting manual SDR prep from hours to minutes per lead.
+            \item Designed a weighted round robin mailbox rotation system that enforced daily per mailbox send caps, cutting spam related sending blocks as outbound volume scaled.
+            \item Designed a FastAPI based custom agent runtime that gives agents full tool access, letting users ship trigger-based automations in minutes instead of custom engineering cycles.
+            \item Built a dialer voice assistant with 900ms end-to-end latency for real time replies, grounded in personalized research from LinkedIn scrapers and web research agents.
+            \item Built an internal code dependency graph across all microservices and exposed it over MCP to accelerate the developer workflow.
         \end{itemize}
 
         \textbf{Software Engineer Specialist} \hfill Jul 2025 --- Nov 2025 \\
@@ -61,7 +60,7 @@
         \textbf{Intern} \hfill Apr 2024 --- Oct 2024 \\
         ICPC Foundation \hfill \textit{Remote, USA}
         \begin{itemize}
-            \item Built a Flutter-based social platform (auth, feeds, messaging) for competitive programmers.
+            % \item Built a Flutter-based social platform (auth, feeds, messaging) for competitive programmers.
             \item Designed real-time notification systems used during ICPC World Finals.
         \end{itemize}
 
@@ -78,12 +77,10 @@
     % 3. Skills
     \begin{rSection}{Skills}
         \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-            Programming & Python, JavaScript, Java \\
-            AI / LLM & LangChain, LangGraph, RAG, Prompt Engineering \\
-            Backend & FastAPI, Spring Boot, Node.js, Django \\
+            Programming & Python, JavaScript \\
+            Backend & FastAPI, Node.js, Django, LangChain, LangGraph \\
             Frontend & React, Next.js \\
-            Systems & Docker, Message Queues \\
-            Cloud & Amazon Web Services \\
+            Systems / Cloud & Docker, Amazon Web Services \\ \\
         \end{tabular}\\
     \end{rSection}
 
